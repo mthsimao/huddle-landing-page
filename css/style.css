@@ -29,11 +29,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 92vh;
+    height: 86vh;
 }
 
 .image {
-    padding-top: 2em;
+    padding-top: 1.8em;
 }
 
 .tudo-dentro {
@@ -50,7 +50,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 3em;
+    gap: 1.6em;
 }
 
 .text-h1 {
@@ -96,7 +96,7 @@ main {
     align-items: center;
     justify-content: flex-end;
     gap: 1.6em;
-    margin-right: 2em;
+    margin-right: 2.5em;
 }
 
 .facebook svg,
@@ -130,7 +130,7 @@ main {
     }
 
     .header {
-        margin-top: 20px;
+        margin-top: 1.5em;
     }
 
     .tudo-dentro {
@@ -148,7 +148,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 2em;
+        gap: 1.5em;
     }
 
     .text-h1 {
