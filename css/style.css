@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --font-open: 'Open Sans', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Violet);
+    background-image: url(/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+}
+
+.image {
+    padding-top: 2em;
+}
+
+.tudo-dentro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.text {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3em;
+}
+
+.text-h1 {
+    font-size: 1.3em;
+    font-family: var(--font-poppins);
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.text-p {
+    font-family: var(--font-open);
+    font-size: 1.2em;
+    color: #cecece;
+}
+
+.btn {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.251);
+    color: var(--Violet);
+    outline: none;
+    width: 220px;
+    padding: 1em;
+    font-size: 1.4em;
+    transition: all .4s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--Soft-Magenta);
+    cursor: pointer;
+    color: white;
+}
+
+.btn:active {
+    background-color: hsl(300, 44%, 61%);
+    transition: 0s;
+}
+
+.items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.6em;
+    margin-right: 2em;
+}
+
+.facebook svg,
+.twitter svg,
+.instagram svg {
+    stroke: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    transition: all .3s ease-in-out;
+}
+
+.facebook svg:hover,
+.twitter svg:hover,
+.instagram svg:hover {
+    cursor: pointer;
+    stroke: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+    transform: scale(1.2);
+}
+
+/* MEDIA CSS */
+
+@media (max-width:1330px) {
+    body {
+        background-image: url('/images/bg-mobile.svg');
+    }
+
+    main {
+        height: auto;
+    }
+
+    .header {
+        margin-top: 20px;
+    }
+
+    .tudo-dentro {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .img-pq {
+        width: 432px;
+    }
+
+    .text {
+        width: 432px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .text-h1 {
+        font-size: 1em;
+    }
+
+    .text-p {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        padding: .8em;
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 3em 0;
+    }
+}
+
+@media (max-width:490px) {
+
+
+    .text {
+        width: 276px;
+    }
+
+    .text-h1 {
+        font-size: 15px;
+    }
+
+    .text-p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 180px;
+    }
+
+    .items {
+        margin: 2em 0;
+    }
+
+    .items div svg{
+        width: 48px;
+        height: 48px;
+    }
+
+    .img-pq {
+        width: 276px;
+    }
+}
